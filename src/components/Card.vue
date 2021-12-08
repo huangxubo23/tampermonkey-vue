@@ -3,6 +3,9 @@
     <Header />
     <div class="app-container">
       <p>TemperMonkey UserScript</p>
+      <p>使用Vue3.0 + Antd-Design-Vue开发油猴插件。</p>
+      <p>Antd-Design-Vue需要按需引入以减少脚本打包体积，可在<a-tag>utils/antd.js</a-tag>引入需要的UI组件。</p>
+      <a-button type="primary">从这里开始探索吧！</a-button>
     </div>
 
     <div class="card__btn" @click="hide">

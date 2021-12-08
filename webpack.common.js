@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+// 最新的 vue-loader 中，VueLoaderPlugin 插件的位置有所改变
+const { VueLoaderPlugin } = require('vue-loader/dist/index')
 
 const pathResolve = (dir) =>{
   return path.resolve(__dirname, '..', dir)

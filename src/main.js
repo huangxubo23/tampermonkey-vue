@@ -1,10 +1,9 @@
-import Vue from 'vue'
-loadStyle('https://unpkg.com/element-ui@2.14.1/lib/theme-chalk/index.css')
-
+loadStyle('https://unpkg.com/ant-design-vue@3.0.0-alpha.14/dist/antd.css')
 
 import App from './app.vue'
 import { isDev } from './config'
 import { loadStyle } from './utils'
+import Antd from '@/utils/antd'
 import './styles/global.scss'
 
 
@@ -14,11 +13,16 @@ root.id = id
 document.body.appendChild(root)
 
 if (isDev) {
-  const ElementUI = require('element-ui')
-  Vue.use(ElementUI)
+  const Vue = require('vue')
+  const app = Vue.createApp(App)
+  // const Antd = require('ant-design-vue');
+  // app.use(Antd)
+  app.use(Antd)
+  app.mount(`#${id}`)
+} else {
+  const app = Vue.createApp(App)
+  // const Antd = require('ant-design-vue');
+  // app.use(Antd)
+  app.use(Antd)
+  app.mount(`#${id}`)
 }
-
-new Vue({
-  el: `#${id}`,
-  render: h => h(App)
-})

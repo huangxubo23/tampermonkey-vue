@@ -6,6 +6,6 @@ module.exports = merge(common(), {
   externals: {
     // use @require in header to import vue
     vue: 'Vue',
-    'element-ui': 'element-ui'
+    // 'ant-design-vue': 'ant-design-vue'
   }
 })

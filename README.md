@@ -1,5 +1,7 @@
 # Tampermonkey-Vue
-使用 Vue + Element-UI 开发油猴插件（Tampermonkey）。
+使用 Vue 3.0 + Antd-Design-Vue 开发油猴插件（Tampermonkey）。
+
+如果需要使用 Vue 2.0 + Eelement-UI 请使用`vue2.0`分支。
 
 ## 安装Tampermonkey插件
 请在浏览器安装[Tampermonkey](https://tampermonkey.net/)插件。
@@ -43,3 +45,6 @@ TAMPERMONKEY_ENTRY_FILE=tampermonkey-vue.user.js
 
 ### Tampermonkey配置
 可以在`tampermonkey.js`文件，配置Tampermonkey选项。
+
+## 写在最后
+Antd-Design-Vue UI框架代码会打包到脚本文件，所以体积会比较大。因此Antd-Design-Vue需要按需引入以减少脚本打包体积，可在`utils/antd.js`里引入需要的UI组件。

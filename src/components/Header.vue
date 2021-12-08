@@ -1,8 +1,7 @@
 <template>
   <div class="header">
-    <i class="el-icon-share"></i>
-    <h3>{{AppName}}</h3>
-    <el-tag>v{{AppVersion}}</el-tag>
+    <h3 class="header-title">{{AppName}}</h3>
+    <a-tag color="#b25eef">v{{AppVersion}}</a-tag>
   </div>
 </template>
 
@@ -29,7 +28,7 @@ export default {
     font-size: 20px;
   }
 
-  h3 {
+  .header-title {
     margin: 0 10px;
     font-size: 20px;
   }
