@@ -17,5 +17,5 @@
 // @grant        GM.xmlHttpRequest
 // @require      https://unpkg.com/vue@next
 // @require      https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js
-// @include      *
+// @match        *
 // ==/UserScript==

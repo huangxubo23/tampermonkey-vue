@@ -19,6 +19,7 @@ npm run dev
 ```
 http://localhost:8080/
 ```
+![web dev preview](./docs/web_dev_preview.png)
 
 可以在`.env.dev`进行开发环境的配置
 ``` js
@@ -46,7 +47,10 @@ TAMPERMONKEY_APP_NAME=TamperMonkey-Vue
 TAMPERMONKEY_ENTRY_FILE=tampermonkey-vue.user.js
 ```
 
-打包完成后，在`dist`目录下会生成`tampermonkey-vue.user.js`文件，把该文件添加到Tampermonkey即可运行。
+打包完成后，在`dist`目录下会生成`tampermonkey-vue.user.js`文件，把该文件里的代码复制到Tampermonkey编辑器即可运行。
+
+![build script](./docs/build_script.png)
+![tempermonkey editor](./docs/tempermonkey_editor.png)
 
 ### Tampermonkey配置
 可以在`tampermonkey.js`文件，配置Tampermonkey选项。
